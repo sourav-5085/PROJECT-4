@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennet | Creative Web Solutions</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #D3D3D3;
+        color: black;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+    }
+    
+    .logo {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: rgb(24, 142, 245);
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navbar ul li {
+        display: inline;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(69, 23, 195);
+        font-weight:bold ;
+    }
+    
+    .navbar ul li a.active {
+        background-color: rgb(34, 165, 209);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }   
+    .contact-btn {
+        background: transparent;
+        border: 2px solid rgb(14, 159, 249);
+        padding: 10px 15px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+   
+    
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        position: relative;
+    }
+    
+    .welcome-text,
+    .est-text {
+        font-size: 14px;
+        position: absolute;
+    }
+    
+    .welcome-text {
+        left: 15%;
+        top: 20%;
+        color: rgb(0, 72, 255);
+        font-weight: bold;
+    }
+    
+    .est-text {
+        right: 15%;
+        top: 20%;
+        color: blue;
+    }
+    
+    .brand-name {
+        font-size: 6rem;
+        font-weight: bold;
+        color: rgb(19, 216, 238);
+    }
+    
+    .scroll-indicator {
+        position: absolute;
+        bottom: 3%;
+        left: 10%;
+        font-size: 14px;
+    }  
+    .subtitle {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .creative-text {
+        font-weight: bold;
+    }
+    
+    .featured-projects {
+        position: absolute;
+        bottom: 3%;
+        right: 10%;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">bennet™</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Index</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Agency</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+        <button class="contact-btn">Let's Talk</button>
+    </header>
+    <main class="hero">
+        <div class="welcome-text">Welcome</div>
+        <h1 class="brand-name">bennet</h1>
+        <div class="est-text">Est. 2025</div>
+        <div class="scroll-indicator">⬇ Scroll to Explore</div>
+        <div class="subtitle">
+            <p>Bringing brands to life through</p>
+            <p class="creative-text">creative web solutions</p>
+        </div>
+        <div class="featured-projects">Featured Projects</div>
+    </main>
+</body>
+</html>
